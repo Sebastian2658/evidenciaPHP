@@ -1,0 +1,55 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+
+        <link rel='shortcut icon' href='../imgs/manzana.png' type='image/x-icon' sizes="16x16" />
+        <!-- ================== ESTILOS CSS ================== -->
+        <link href="../plugins/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <!-- ================== SCRIPTS JS ================== -->
+        <script src="../plugins/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script src="../plugins/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+
+        <title>FORMULARIO ESTUDIANTES</title> 
+    </head>
+    <body>
+    <div style="background-color: white;">
+        <div style="width: 50%;margin-top:3%; margin-left: 25%;">
+        <form  name="formulario" method="post" action="evidencia.php" style="border:1px solid #ccc; background-color: rgb(229, 239, 241);">
+            <div  class="container" style="margin: 10px;">
+                <h1 align=center style="font-family: 'Bangers', cursive; font-weight: bold; color:rgb(231, 14, 14);">Formulario para estuidiantes</h1>
+                <p style="font-size: 20px; font-weight: bold; margin: -10px 0px -10px 0px;">Este formulario recolecta la información de los estudiantes</p>
+                <hr>
+                <div class="form-gropu">
+                    <label for="Codigo"><b>Código</b></label>
+                    <input type="number" min="00000000" max="99999999"  class="form-control" placeholder="ingresa tu código '12345678'" name ="codigo" required>
+                </div>
+                <div class="form-gropu">
+                    <label for="nombre"><b>Nombre</b></label>
+                    <input type="text" maxlength="20" class="form-control" placeholder="ingresa tu nombre" name ="nombre" required>
+                </div>
+                <div class="form-gropu">
+                    <label for="apellido"><b>Apellido</b></label>
+                    <input type="text" maxlength="20" class="form-control" placeholder="ingresa tu apellido" name ="apellido" required>
+                </div>
+                <div class="form-gropu">
+                    <label for="email"><b>Correo electronico</b></label>
+                    <input type="text" class="form-control" placeholder="tucorreo@ejemplo.com" name ="correo" required>
+                </div>
+                <div class="form-gropu">
+                    <label for="edad"><b>Edad</b></label>
+                    <input type="number" min="000" max="150"  class="form-control" placeholder="ingresa tu edad" name ="edad" required>
+                </div>
+                <div class="clearfix" style="margin: 15px;">
+                    <button type="submit" class="btn btn-warning" id="boton1"> Ingresar</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+    </body>
+</html>
